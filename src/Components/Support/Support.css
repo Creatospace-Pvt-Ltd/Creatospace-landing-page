@@ -1,0 +1,26 @@
+
+
+.supportCard {
+  width: 60%;
+  background-color: #007475;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  margin: 10% auto;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.supportCard h3{
+    font-size: 1rem;
+}
+
+.supportTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  border-width: 100%;
+}
+
