@@ -6,7 +6,7 @@ import Followers from "../Assets/followers.png";
 
 export const TodoSectionLayout = styled.div`
   /* min-height: 100vh; */
-  height: 100%;
+  height: max-content;
   margin: 0 auto;
   width: 90%;
   box-sizing: border-box;
@@ -357,14 +357,15 @@ export const PlatformLayout = styled(VirtualCardSectionLayout)`
   flex-direction: column;
   gap: 8rem;
   scroll-snap-align: start;
+  height: max-content;
 
   @media ${DEVICE.laptop} {
     gap: 1rem;
-    height: 100%;
+    /* height: 100%; */
   }
 
   @media ${DEVICE.tablet} {
-    height: 100%;
+    /* height: 100%; */
     gap: 1rem;
   }
 `;
@@ -378,7 +379,7 @@ export const PlatformCardLayoutParent = styled(VirtualCardLayoutParent)`
   padding-top: 0;
   background-color: transparent;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-
+  /* display: flex; */
   @media ${DEVICE.laptop} {
     height: 100%;
     gap: 2rem;
