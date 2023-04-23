@@ -80,7 +80,7 @@ const Header = () => {
                   handleClick();
                 }}
               >
-                Download The Application Now
+                Download The Application Now (For Windows)
               </MainHomeLeftButton>
             </MainHomeLeft>
 
