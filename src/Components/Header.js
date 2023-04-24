@@ -27,7 +27,7 @@ const Header = () => {
 
   const handleClick = () => {
     const url =
-      "https://creatospace-glb.s3.ap-south-1.amazonaws.com/jdk-20_windows-x64_bin.exe";
+      "https://creatospace-glb.s3.ap-south-1.amazonaws.com/CreatospaceSetup.exe";
     const link = document.createElement("a");
     link.download = "Creatospace.exe";
     link.href = url;
