@@ -21,6 +21,9 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import Cube from "./Cube";
 import { useState } from "react";
+import { OrbitControls, Stars } from "@react-three/drei";
+import { Earth } from "./Earth_low_poly";
+import { Model } from "./Kate";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -45,7 +48,8 @@ const Header = () => {
         }}
       >
         <Canvas
-          camera={{ position: [3, 3, 5] }}
+          // orthographic
+          camera={{ position: [0, 0, 8.5] }}
           style={{
             position: "fixed",
             width: "100%",
@@ -55,11 +59,27 @@ const Header = () => {
             zIndex: 0,
             overflow: "hidden",
             pointerEvents: "none",
+            // backgroundColor: "black",
           }}
         >
           <directionalLight position={[-1, 1, 1]} intensity={0.5} />
           <ambientLight intensity={0.1} />
-          <Cube scroll={scroll} />
+          <Stars
+            radius={100}
+            depth={50}
+            count={5000}
+            factor={4}
+            saturation={1}
+            fade
+            speed={1}
+          />
+          {/* <Cube scroll={scroll} /> */}
+          {/* <Earth /> */}
+          {/* <LittleEarth /> */}
+
+          <OrbitControls />
+          <Earth scroll={scroll} />
+          <Model />
         </Canvas>
         <MainHomeLayout>
           <Navbar />
@@ -83,12 +103,6 @@ const Header = () => {
                 Download The Application Now (For Windows)
               </MainHomeLeftButton>
             </MainHomeLeft>
-
-            {/* <MainHomeRight>
-              <MainHomeRightImage>
-
-              </MainHomeRightImage>
-            </MainHomeRight> */}
           </MainHome>
         </MainHomeLayout>
         <TodoSection />
@@ -105,6 +119,7 @@ const Header = () => {
           Join Waiting List
         </JoinBtn>
       </BannerHeadCon> */}
+      {/* <Footer /> */}
     </>
   );
 };

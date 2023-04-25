@@ -187,9 +187,9 @@ const TodoSection = () => {
           <PlatformCardLayoutIn>
             <PlatformCards CardText="Social Media Creators" image={social} />
             <PlatformCardsLayoutBack>
-              A perfect solution for social media creaters to increase their
+              A perfect solution for social media creators to increase their
               reach and interact with their audience. Gain insight about their
-              content and how its doing with the audience
+              content and how it's doing with the audience.
             </PlatformCardsLayoutBack>
           </PlatformCardLayoutIn>
           <PlatformCardLayoutIn>
@@ -197,16 +197,16 @@ const TodoSection = () => {
 
             <PlatformCardsLayoutBack>
               Admins of various communities can hang out and discuss the ins and
-              outs of their respective comunities. Even cumbersome tasks feel
-              enjoyable when its immersive.
+              outs of their respective communities. Even cumbersome tasks feel
+              enjoyable when it's immersive.
             </PlatformCardsLayoutBack>
           </PlatformCardLayoutIn>
           <PlatformCardLayoutIn>
             <PlatformCards CardText="Creative People" image={Creative} />
             <PlatformCardsLayoutBack>
-              All round facilities for all sorts of creative genious out there.
-              Connect interact and communicate with audience and like minded
-              people.
+              All-round facilities for all sorts of creative genius out there.
+              Connect, interact, and communicate with audience and like-minded
+              people
             </PlatformCardsLayoutBack>
           </PlatformCardLayoutIn>
         </PlatformCardLayoutParent>

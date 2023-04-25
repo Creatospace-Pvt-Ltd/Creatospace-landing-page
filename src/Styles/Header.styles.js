@@ -17,12 +17,12 @@ export const MainHomeLayout = styled.div`
   width: 100%;
   height: max-content;
   background-size: cover;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to bottom,
       transparent,
       ${COLORS.background}
-    ),
-    url(${coverimg});
+    ), */
+  /* url(${coverimg}); */
   /* background: url(${coverimg}); */
   scroll-snap-align: start;
 `;

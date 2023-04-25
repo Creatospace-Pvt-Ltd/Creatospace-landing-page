@@ -11,7 +11,6 @@ export const TodoSectionLayout = styled.div`
   width: 90%;
   box-sizing: border-box;
   scroll-snap-align: start;
-
   @media ${DEVICE.tablet} {
     margin-top: 3rem;
   }
