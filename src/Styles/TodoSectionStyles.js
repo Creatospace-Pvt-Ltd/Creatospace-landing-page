@@ -11,6 +11,7 @@ export const TodoSectionLayout = styled.div`
   width: 90%;
   box-sizing: border-box;
   scroll-snap-align: start;
+
   @media ${DEVICE.tablet} {
     margin-top: 3rem;
   }
@@ -268,9 +269,12 @@ export const CardLayoutParent = styled(TodoSectionLayoutParent)`
 export const VirtualCardSectionLayout = styled.div`
   width: 100%;
   height: auto;
-  padding: 1rem;
+  padding: 1rem 0;
   display: flex;
+  padding-bottom: 40px;
   flex-direction: column;
+  position: relative;
+  top: -30px;
   @media ${DEVICE.lapetop} {
     height: 100%;
     gap: 5rem;
@@ -311,6 +315,7 @@ export const VirtualSectionParent = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  padding-bottom: 50px;
   height: auto;
   /* padding: ${(props) => (props.VirtualSpace ? "2rem" : "0")}; */
   box-sizing: border-box;
@@ -354,7 +359,7 @@ export const PlatformLayout = styled(VirtualCardSectionLayout)`
   height: 42rem;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  gap: 2rem;
   scroll-snap-align: start;
   height: max-content;
 

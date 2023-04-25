@@ -107,19 +107,6 @@ const Header = () => {
         </MainHomeLayout>
         <TodoSection />
       </HeaderLayout>
-      {/* <BannerHeadCon>
-        <BannerHead>
-          Register for FREE to meet your favourite creators in their Metaverse
-        </BannerHead>
-        <JoinBtn
-           onClick={() => {
-            window.open( 'https://forms.gle/dLQH78BTnxm5QzPw6')
-          }}
-        >
-          Join Waiting List
-        </JoinBtn>
-      </BannerHeadCon> */}
-      {/* <Footer /> */}
     </>
   );
 };

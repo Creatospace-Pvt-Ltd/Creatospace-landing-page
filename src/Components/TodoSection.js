@@ -46,6 +46,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Auditorium } from "./Auditorium";
 import ControlToDo from "./ControlToDo";
 import { PlatformCardsLayoutBack } from "../Styles/PlatformCardsStyles";
+import Footer from "./Footer";
 // import VirtualSpaces from './VirtualSpaces';
 const TodoSection = () => {
   const VirtualSpaceCardsData = [
@@ -118,7 +119,12 @@ const TodoSection = () => {
   }, []);
 
   return (
-    <div style={{ height: "100vh" }}>
+    <div
+      style={{
+        height: "100vh",
+        position: "relative",
+      }}
+    >
       <TodoSectionLayout>
         <TodoSectionLayoutTitle>
           <span>What can you do</span>
@@ -230,6 +236,7 @@ const TodoSection = () => {
             ))}
           </VirtualCardLayoutParent>
         </VirtualSectionParent>
+        <Footer />
       </VirtualCardSectionLayout>
     </div>
   );

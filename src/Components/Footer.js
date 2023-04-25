@@ -8,20 +8,18 @@ import { FooterSupportlink } from "../Styles/Footer.styles";
 
 const Footer = () => {
   return (
-    <div style={{ scrollSnapAlign: "start", maxHeight: "100px" }}>
-      <FooterContent>
-        <FooterPrivacyPolicylink to="./privacy-policy">
-          Privacy Policy
-        </FooterPrivacyPolicylink>
-        <FooterTermslink to="./terms-and-conditions">
-          Terms and Conditions
-        </FooterTermslink>
-        <FooterRefundlink to="./refund-cancellation-policy">
-          Refund & Cancellation Policy
-        </FooterRefundlink>
-        <FooterSupportlink to="./support">Support</FooterSupportlink>
-      </FooterContent>
-    </div>
+    <FooterContent>
+      <FooterPrivacyPolicylink to="./privacy-policy">
+        Privacy Policy
+      </FooterPrivacyPolicylink>
+      <FooterTermslink to="./terms-and-conditions">
+        Terms and Conditions
+      </FooterTermslink>
+      <FooterRefundlink to="./refund-cancellation-policy">
+        Refund & Cancellation Policy
+      </FooterRefundlink>
+      <FooterSupportlink to="./support">Support</FooterSupportlink>
+    </FooterContent>
   );
 };
 
