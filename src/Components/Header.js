@@ -30,7 +30,7 @@ const Header = () => {
 
   const handleClick = () => {
     const url =
-      "https://creatospace-glb.s3.ap-south-1.amazonaws.com/Creatospace+Setup.exe";
+      "https://link.creatospace.com/windownload";
     const link = document.createElement("a");
     link.download = "Creatospace.exe";
     link.href = url;
